@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nameOfEvent = new System.Windows.Forms.TextBox();
+            this.nameOfEventField = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePickerEvent = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxTime = new System.Windows.Forms.TextBox();
+            this.dateTimePickerEventField = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBoxDescription = new System.Windows.Forms.TextBox();
+            this.descriptionOfEventField = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxCategories = new System.Windows.Forms.ComboBox();
+            this.categoryOfEventField = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonAddParticipant = new System.Windows.Forms.Button();
             this.buttonDeleteParticipant = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxParticipants = new System.Windows.Forms.TextBox();
+            this.participantsOfEventField = new System.Windows.Forms.TextBox();
             this.checkedListBoxParticipants = new System.Windows.Forms.CheckedListBox();
             this.buttonAddEvent = new System.Windows.Forms.Button();
+            this.timeOfEventField = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // nameOfEvent
+            // nameOfEventField
             // 
-            this.nameOfEvent.Location = new System.Drawing.Point(12, 36);
-            this.nameOfEvent.Name = "nameOfEvent";
-            this.nameOfEvent.Size = new System.Drawing.Size(125, 20);
-            this.nameOfEvent.TabIndex = 0;
-            this.nameOfEvent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nameOfEventField.Location = new System.Drawing.Point(268, 36);
+            this.nameOfEventField.Name = "nameOfEventField";
+            this.nameOfEventField.Size = new System.Drawing.Size(125, 20);
+            this.nameOfEventField.TabIndex = 0;
+            this.nameOfEventField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 20);
+            this.label1.Location = new System.Drawing.Point(265, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 1;
@@ -67,82 +67,64 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 71);
+            this.label2.Location = new System.Drawing.Point(265, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Дата";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // dateTimePickerEvent
+            // dateTimePickerEventField
             // 
-            this.dateTimePickerEvent.Location = new System.Drawing.Point(12, 87);
-            this.dateTimePickerEvent.MinDate = new System.DateTime(2025, 4, 5, 0, 0, 0, 0);
-            this.dateTimePickerEvent.Name = "dateTimePickerEvent";
-            this.dateTimePickerEvent.Size = new System.Drawing.Size(125, 20);
-            this.dateTimePickerEvent.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Время";
-            // 
-            // textBoxTime
-            // 
-            this.textBoxTime.Location = new System.Drawing.Point(12, 140);
-            this.textBoxTime.Name = "textBoxTime";
-            this.textBoxTime.Size = new System.Drawing.Size(125, 20);
-            this.textBoxTime.TabIndex = 5;
+            this.dateTimePickerEventField.Location = new System.Drawing.Point(268, 85);
+            this.dateTimePickerEventField.MinDate = new System.DateTime(2025, 4, 5, 0, 0, 0, 0);
+            this.dateTimePickerEventField.Name = "dateTimePickerEventField";
+            this.dateTimePickerEventField.Size = new System.Drawing.Size(125, 20);
+            this.dateTimePickerEventField.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 177);
+            this.label4.Location = new System.Drawing.Point(265, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Описание";
             // 
-            // textBoxDescription
+            // descriptionOfEventField
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(12, 193);
-            this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(125, 20);
-            this.textBoxDescription.TabIndex = 7;
+            this.descriptionOfEventField.Location = new System.Drawing.Point(268, 183);
+            this.descriptionOfEventField.Name = "descriptionOfEventField";
+            this.descriptionOfEventField.Size = new System.Drawing.Size(125, 20);
+            this.descriptionOfEventField.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 228);
+            this.label5.Location = new System.Drawing.Point(265, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Категория";
             // 
-            // comboBoxCategories
+            // categoryOfEventField
             // 
-            this.comboBoxCategories.FormattingEnabled = true;
-            this.comboBoxCategories.Items.AddRange(new object[] {
+            this.categoryOfEventField.FormattingEnabled = true;
+            this.categoryOfEventField.Items.AddRange(new object[] {
             "Сольный концерт",
             "Фестиваль",
             "Турне",
             "Открытый микрофон",
             "Кавер-концерт",
             "Благотворительный концерт"});
-            this.comboBoxCategories.Location = new System.Drawing.Point(12, 244);
-            this.comboBoxCategories.Name = "comboBoxCategories";
-            this.comboBoxCategories.Size = new System.Drawing.Size(125, 21);
-            this.comboBoxCategories.TabIndex = 9;
-            this.comboBoxCategories.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.categoryOfEventField.Location = new System.Drawing.Point(268, 242);
+            this.categoryOfEventField.Name = "categoryOfEventField";
+            this.categoryOfEventField.Size = new System.Drawing.Size(125, 21);
+            this.categoryOfEventField.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 283);
+            this.label6.Location = new System.Drawing.Point(265, 349);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 13);
             this.label6.TabIndex = 10;
@@ -150,7 +132,7 @@
             // 
             // buttonAddParticipant
             // 
-            this.buttonAddParticipant.Location = new System.Drawing.Point(12, 341);
+            this.buttonAddParticipant.Location = new System.Drawing.Point(268, 391);
             this.buttonAddParticipant.Name = "buttonAddParticipant";
             this.buttonAddParticipant.Size = new System.Drawing.Size(125, 23);
             this.buttonAddParticipant.TabIndex = 12;
@@ -160,7 +142,7 @@
             // 
             // buttonDeleteParticipant
             // 
-            this.buttonDeleteParticipant.Location = new System.Drawing.Point(12, 394);
+            this.buttonDeleteParticipant.Location = new System.Drawing.Point(268, 415);
             this.buttonDeleteParticipant.Name = "buttonDeleteParticipant";
             this.buttonDeleteParticipant.Size = new System.Drawing.Size(125, 23);
             this.buttonDeleteParticipant.TabIndex = 13;
@@ -171,59 +153,76 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(195, 20);
+            this.label7.Location = new System.Drawing.Point(12, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(104, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Список участников";
             // 
-            // textBoxParticipants
+            // participantsOfEventField
             // 
-            this.textBoxParticipants.Location = new System.Drawing.Point(12, 299);
-            this.textBoxParticipants.Name = "textBoxParticipants";
-            this.textBoxParticipants.Size = new System.Drawing.Size(125, 20);
-            this.textBoxParticipants.TabIndex = 15;
+            this.participantsOfEventField.Location = new System.Drawing.Point(268, 365);
+            this.participantsOfEventField.Name = "participantsOfEventField";
+            this.participantsOfEventField.Size = new System.Drawing.Size(125, 20);
+            this.participantsOfEventField.TabIndex = 15;
             // 
             // checkedListBoxParticipants
             // 
             this.checkedListBoxParticipants.FormattingEnabled = true;
-            this.checkedListBoxParticipants.Location = new System.Drawing.Point(198, 36);
+            this.checkedListBoxParticipants.Location = new System.Drawing.Point(12, 36);
             this.checkedListBoxParticipants.Name = "checkedListBoxParticipants";
             this.checkedListBoxParticipants.Size = new System.Drawing.Size(247, 349);
             this.checkedListBoxParticipants.TabIndex = 16;
             // 
             // buttonAddEvent
             // 
-            this.buttonAddEvent.Location = new System.Drawing.Point(198, 394);
+            this.buttonAddEvent.Location = new System.Drawing.Point(12, 394);
             this.buttonAddEvent.Name = "buttonAddEvent";
             this.buttonAddEvent.Size = new System.Drawing.Size(126, 23);
             this.buttonAddEvent.TabIndex = 17;
             this.buttonAddEvent.Text = "Добавить событие";
             this.buttonAddEvent.UseVisualStyleBackColor = true;
-            this.buttonAddEvent.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAddEvent.Click += new System.EventHandler(this.buttonAddEvent_Click);
+            // 
+            // timeOfEventField
+            // 
+            this.timeOfEventField.Location = new System.Drawing.Point(268, 133);
+            this.timeOfEventField.Name = "timeOfEventField";
+            this.timeOfEventField.Size = new System.Drawing.Size(125, 20);
+            this.timeOfEventField.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(265, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Время";
             // 
             // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 450);
+            this.ClientSize = new System.Drawing.Size(416, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.timeOfEventField);
             this.Controls.Add(this.buttonAddEvent);
             this.Controls.Add(this.checkedListBoxParticipants);
-            this.Controls.Add(this.textBoxParticipants);
+            this.Controls.Add(this.participantsOfEventField);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonDeleteParticipant);
             this.Controls.Add(this.buttonAddParticipant);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBoxCategories);
+            this.Controls.Add(this.categoryOfEventField);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBoxDescription);
+            this.Controls.Add(this.descriptionOfEventField);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBoxTime);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePickerEvent);
+            this.Controls.Add(this.dateTimePickerEventField);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.nameOfEvent);
+            this.Controls.Add(this.nameOfEventField);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Add";
             this.Text = "Добавление события";
             this.ResumeLayout(false);
@@ -233,22 +232,22 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox nameOfEvent;
+        private System.Windows.Forms.TextBox nameOfEventField;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePickerEvent;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxTime;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEventField;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxDescription;
+        private System.Windows.Forms.TextBox descriptionOfEventField;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBoxCategories;
+        private System.Windows.Forms.ComboBox categoryOfEventField;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonAddParticipant;
         private System.Windows.Forms.Button buttonDeleteParticipant;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxParticipants;
+        private System.Windows.Forms.TextBox participantsOfEventField;
         private System.Windows.Forms.CheckedListBox checkedListBoxParticipants;
         private System.Windows.Forms.Button buttonAddEvent;
+        private System.Windows.Forms.TextBox timeOfEventField;
+        private System.Windows.Forms.Label label3;
     }
 }
